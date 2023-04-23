@@ -90,4 +90,7 @@ Sub Sorteio_Grupos()
     
     Range(Cells(1, 1), Cells(Linha, Coluna)).EntireColumn.AutoFit
     Sheets(NomePlanilha).Name = "SorteioGrupos"
+
+    Apagar_Linhas = (Cells(1, 1).End(xlDown).Row + 1) & ":" & (Cells(1, 1).End(xlDown).Row + 10)
+    Rows(Apagar_Linhas).Delete Shift:=xlUp
 End Sub
