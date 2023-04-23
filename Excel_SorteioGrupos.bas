@@ -1,21 +1,21 @@
-Attribute VB_Name = "MÛdulo1"
+Attribute VB_Name = "Excel_SorteioGrupos"
 Sub Sorteio_Grupos()
-' Definindo e calculando vari·veis necess·rias para a execuÁ„o do sorteio
+' Definindo e calculando vari√°veis necess√°rias para a execu√ß√£o do sorteio
     Linha_Nomes = Cells(1, 1).End(xlDown).Row
     Linha_Grupos = Cells(1, 2).End(xlDown).Row
     N_Participantes = (Linha_Nomes \ Linha_Grupos)
     IntervaloTabela = "$A$1:$B$" & Linha_Nomes
     NomePlanilha = ActiveSheet.Name
     
-    Letras = "A¡¬√BC«DE… FGHIÕŒJKLMNO”‘’PQRSTU⁄€‹VWXYZ"
+    Letras = "A√Å√Ç√ÉBC√áDE√â√äFGHI√ç√éJKLMNO√ì√î√ïPQRSTU√ö√õ√úVWXYZ"
     
-    ' Verificando se o n˙mero de participantes È suficiente para formar todos os grupos e encerrando a macro em caso negativo
+    ' Verificando se o n√∫mero de participantes √© suficiente para formar todos os grupos e encerrando a macro em caso negativo
     If N_Participantes < 1 Then
-        MsgBox "A quantidade de grupos excede a quantidade de participantes disponÌveis."
+        MsgBox "A quantidade de grupos excede a quantidade de participantes dispon√≠veis."
         Exit Sub
     End If
 
-    ' Randomizando o valor da vari·vel "Numeros" para garantir resultados diferentes a cada execuÁ„o
+    ' Randomizando o valor da vari√°vel "Numeros" para garantir resultados diferentes a cada execu√ß√£o
     Randomize
         Numeros = Int(1937554306 * Rnd(1937554306 + 1937554306 * Rnd())) + 1937554306
         Numeros = (Numeros + Numeros + 82098) * (7868787 + Numeros)
@@ -25,7 +25,7 @@ Sub Sorteio_Grupos()
     Range("B1").Select
     ActiveSheet.Paste
     
-' Loop ReordenaÁ„o
+' Loop Reordena√ß√£o
     Do While Entrada <> "Z"
         Entrada = Right(Left(Letras, N), 1)
         Saida = Right(Left(Numeros, N), 2)
@@ -33,7 +33,7 @@ Sub Sorteio_Grupos()
         N = N + 1
     Loop
     
-' Ordenando as correspondencias com base na redordenaÁ„o
+' Ordenando as correspondencias com base na redordena√ß√£o
     Range(Cells(1, 3), Cells(Linha_Grupos, 3)).Cut
     Range("E1").Select
     ActiveSheet.Paste
