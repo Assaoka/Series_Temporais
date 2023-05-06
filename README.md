@@ -3,7 +3,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 Esse código foi escrito em VBA (Visual Basic for Applications), uma linguagem de programação muito utilizada para automatizar tarefas em aplicativos do Microsoft Office (Excel, Word, PowerPoint...).
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-Colocarei como utilizar a macro e como importar para seu documento de trabalho excel. Não consegui organizar ainda por estar em semana de provas, até dia 06/05 teremos uma descrição oficial organizada. 
+Colocarei como utilizar a macro e como importar para seu documento de trabalho excel. Não consegui organizar ainda por estar em semana de provas, até dia 16/05 teremos uma descrição oficial organizada. 
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 Caso saiba importar e precise utilizar antes do oficial:
 
